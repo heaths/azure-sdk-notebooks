@@ -52,3 +52,6 @@ USER $NB_UID
 # Install .NET global tools as user.
 RUN dotnet tool install -g Microsoft.dotnet-interactive \
  && dotnet interactive jupyter install
+
+# Set notebook folder on startup.
+COPY jupyter_notebook_config.py /home/$NB_USER/.jupyter/
