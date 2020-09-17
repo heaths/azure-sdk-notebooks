@@ -24,6 +24,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     ca-certificates \
     curl \
     lsb-release \
+    git \
     gnupg \
     # Prepare Azure CLI.
  && curl -sL https://packages.microsoft.com/keys/microsoft.asc \

@@ -6,3 +6,6 @@ import os
 c.NotebookApp.notebook_dir = '/home/{}/work'.format(os.environ['NB_USER'])
 c.NotebookApp.open_browser = False
 c.NotebookApp.quit_button = False
+
+# TODO: Generate a token and write to .vscode/settings.json
+c.NotebookApp.token = 'vscode'

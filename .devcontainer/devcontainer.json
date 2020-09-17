@@ -1,0 +1,21 @@
+{
+  "name": "Jupyter",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "overrideCommand": false,
+  "forwardPorts": [8888],
+  "containerUser": "jovyan",
+
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/jovyan/work,type=bind,consistency=cached",
+  "workspaceFolder": "/home/jovyan/work",
+
+  "extensions": [
+    "ms-python.python"
+  ],
+  "settings": {
+    "python.dataScience.alwaysTrustNotebooks": true,
+    "python.dataScience.jupyterServerURI": "http://127.0.0.1:8888/?token=vscode",
+    "python.pythonPath": "/opt/conda/bin/python"
+  }
+}
